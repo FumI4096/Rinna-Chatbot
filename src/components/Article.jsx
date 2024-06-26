@@ -1,18 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Article = props => {
+const Article = ({title, comment, image, showButton, buttonLink, buttonText}) => {
     return (
         <>
             <article>
                 <aside>
-                    <h1>{props.title}</h1>
-                    <p>{props.comment}</p>
+                    <h1>{title}</h1>
+                    <p>{comment}</p>
                 </aside>
-                <img src={props.image} alt="" />
+                <img src={image} alt="" />
             </article>
-            {props.showButton && (
-                <a href={props.buttonLink}>{props.buttonText}</a>
+            {showButton && (
+                <a href={buttonLink}>{buttonText}</a>
             )}
 
         </>
