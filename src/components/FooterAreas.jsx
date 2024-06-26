@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 
-const FooterAreas = (image, imageAlt, link, title) => {
+const FooterAreas = ({image, imageAlt, link, title}) => {
     return (
         <article>
             <img src={image} alt={imageAlt}/>
@@ -14,6 +14,7 @@ const FooterAreas = (image, imageAlt, link, title) => {
 
 FooterAreas.propTypes = {
     image: PropTypes.string.isRequired,
+    imageAlt: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired
 }
