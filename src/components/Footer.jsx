@@ -11,7 +11,7 @@ function Footer() {
           link='https://www.facebook.com/LetranCalambaOfficial'
         />
         <FooterAreas 
-          title='School of Computer Studies and Technology'
+          title="School of Computer Studies and Technology" 
           link='https://www.facebook.com/SCSTSCofficial'
         />
         <FooterAreas 

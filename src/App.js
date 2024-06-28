@@ -4,6 +4,7 @@ import About from './pages/About'
 import Chat from './pages/Chat'
 import Feedback from './pages/Feedback'
 import Nav from './components/Nav'
+import './style/tailwind.css';
 import { Routes, Route } from 'react-router-dom'
 
 
