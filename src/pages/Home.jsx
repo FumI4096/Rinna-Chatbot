@@ -4,12 +4,12 @@ import Article from '../components/Article'
 import Footer from '../components/Footer'
 
 function Home() {
-    return (
+    return (    
         <>
             {/*Hero section*/}
-            <header>
-                <button><Link to='/'>Getting Started</Link></button>
-                <button>Give us your Comment</button>
+            <header className='relative after:content-[""] after:absolute after:inset-0 after:bg-neutral-950/60 isolation bg-headerBackground bg-no-repeat bg-cover h-2xl flex items-center justify-center gap-3'>
+                <button className='h-auto w-auto z-10'><Link to='/chat' className='bg-black text-white flex items-center justify-center rounded-full'>Getting Started</Link></button>
+                <button className='h-auto w-auto z-10'><Link className='bg-black text-white flex items-center justify-center rounded-full h-auto text-center'>Give us your Comment</Link></button>
             </header>
 
             {/*Main secction*/}

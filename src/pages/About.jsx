@@ -5,15 +5,15 @@ import Footer from "../components/Footer"
 function About() {
     return (
         <>
-            <main>
+            <main className='w-full'>
                 <Article 
                     title="Colegio de San Juan de Letran Calamba" 
-                    comment="Some message"
+                    comment="Arriba! Your "
                     image=""
                 />
                 <Article
                     title="School of Computer Studies and Technology" 
-                    comment="Some message"
+                    comment="Hello Griffins!"
                     image=""
                 />
                 <Article 
