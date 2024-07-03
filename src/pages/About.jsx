@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 function About() {
     return (
         <>
-            <main className='w-full'>
+            <main className=''>
                 <Article 
                     title="Colegio de San Juan de Letran Calamba" 
                     comment="Arriba! Your "

@@ -4,16 +4,25 @@ import PropTypes from 'prop-types'
 const Article = ({title, comment, image, showButton, buttonLink, buttonText}) => {
     return (
         <>
-            <article>
+            <article className={`h-96 flex px-24 py-16 gap-32  
+                    ${
+                        (title !== "Artificial Intelligence (AI)" && title !== "Get a Chitchat with Rinna") ? 'flex-row-reverse bg-violet-custom-1 decoration-violet-400' : 'flex-row bg-gray-custom-1'
+                    }
+                `}>
+                <img src={image} alt="" className='h-full rounded-full'/>
                 <aside>
-                    <h1>{title}</h1>
-                    <p>{comment}</p>
+                    <h1 className={`text-3xl mb-10 text-white font-mono underline underline-offset-4 font-bold
+                        ${
+                            (title !== "Artificial Intelligence (AI)" && title !== "Get a Chitchat with Rinna") ? 'decoration-violet-600' : 'decoration-violet-400'
+                        } 
+                    `}>{title}</h1>
+                    <p className='text-white leading-8'>{comment}</p>
+                    {showButton && (
+                        <a href={buttonLink} className='text-white'>{buttonText}</a>
+                    )}
                 </aside>
-                <img src={image} alt="" />
             </article>
-            {showButton && (
-                <a href={buttonLink}>{buttonText}</a>
-            )}
+
 
         </>
 

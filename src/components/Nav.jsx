@@ -7,10 +7,10 @@ const Nav = () => {
         <nav className= "bg-violet-700 flex justify-between items-center h-20 w-full">
             <img src={Griffin} alt="logo" className='h-full pl-24 drop-shadow-xl'/>
             <ul className="pr-24 flex items-center h-full">
-                <li className='h-full flex items-center'><Link to='/home'>Home</Link></li>
-                <li className='h-full flex items-center pl-14'><Link to='/about'>About</Link></li>
-                <li className='h-full flex items-center pl-14'><Link to='/feedback'>Feedback</Link></li>
-                <li className='h-full flex items-center pl-14'><Link to='/chat'>Chat with Rinna</Link></li>
+                <li className='h-full'><Link to='/home' className='bg-slate-950/20 h-full w-32 flex items-center justify-center text-base uppercase text-white font-mono'>Home</Link></li>
+                <li className='h-full ml-4'><Link to='/about' className='bg-slate-950/20 h-full w-32 flex items-center justify-center text-base uppercase text-white font-mono'>About</Link></li>
+                <li className='h-full ml-4'><Link to='/feedback' className='bg-slate-950/20 h-full w-32 flex items-center justify-center text-base uppercase text-white font-mono'>Feedback</Link></li>
+                <li className='h-12 bg-violet-200 ml-4 rounded-full'><Link to='/chat' className='h-full w-40 flex items-center justify-center text-sm text-black font-bold font-mono'>Chat with Rinna</Link></li>
             </ul>
         </nav>
     )
