@@ -2,16 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 
-<<<<<<< Updated upstream
-const FooterAreas = (image, imageAlt, link, title) => {
-    return (
-        <article>
-            <img src={image} alt={imageAlt}/>
-            <h2><a href={link} target='_blank' rel='noreferrer'>{title}</a></h2>
-        
-        </article>
-    )
-=======
 const FooterAreas = ({imageExist, iconExist, icon, image, imageAlt, link, title}) => {
     if(imageExist){
         return(
@@ -29,7 +19,6 @@ const FooterAreas = ({imageExist, iconExist, icon, image, imageAlt, link, title}
             <li><a href={link} target='_blank' rel='noreferrer'>{icon}</a></li>
         )
     }
->>>>>>> Stashed changes
 }
 
 FooterAreas.propTypes = {
