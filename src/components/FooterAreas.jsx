@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 const FooterAreas = (image, imageAlt, link, title) => {
@@ -15,6 +16,8 @@ const FooterAreas = (image, imageAlt, link, title) => {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> feature
 const FooterAreas = ({imageExist, iconExist, icon, image, imageAlt, link, title}) => {
     if(imageExist){
         return(
@@ -32,10 +35,13 @@ const FooterAreas = ({imageExist, iconExist, icon, image, imageAlt, link, title}
             <li><a href={link} target='_blank' rel='noreferrer'>{icon}</a></li>
         )
     }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> feature
 }
 
 FooterAreas.propTypes = {
