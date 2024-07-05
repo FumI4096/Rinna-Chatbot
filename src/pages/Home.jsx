@@ -2,9 +2,9 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Article from '../components/Article'
 import Footer from '../components/Footer'
-import Rinna from '../images/rinna.jpg'
 import AI from '../images/AIpic.jpg'
 import API from '../images/APIpic.jpg'
+import GriffinBG from '../images/Griffin2.png'
 
 function Home() {
     return (    
@@ -31,10 +31,11 @@ function Home() {
                     />
 
                     <Article
-                        title="Get a Chitchat with Rinna" 
-                        comment="Curious about AI, need assistance, or just want to chat? Feel free to start a conversation with Rinna—I'm here to help!"
-                        image={Rinna}
-                        showButton={true}                   
+                        title="Get a Chitchat with Princy" 
+                        comment="Curious about AI, need assistance, or just want to chat? Feel free to start a conversation with Princy—I'm here to help!"
+                        image= {GriffinBG}
+                        showButton= {true}   
+                        buttonText= "Chat Here!"                
                     />
                 </section>
             </main>

@@ -20,7 +20,14 @@ module.exports = {
         'gray1': 'rgb(166,166,166)',
         'violet-custom-1': '#383838',
         'gray-custom-1': '#181818'
-      }
+      },
+      fontFamily: {
+        'anton': ["Anton SC", "sans-serif"]
+      },
+      letterSpacing: {
+        'custom-spacing-1': '0.25rem'
+      },
+
 
     },
   },
