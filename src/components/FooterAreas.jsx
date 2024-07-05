@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 const FooterAreas = (image, imageAlt, link, title) => {
     return (
         <article>
@@ -12,6 +13,8 @@ const FooterAreas = (image, imageAlt, link, title) => {
         </article>
     )
 =======
+=======
+>>>>>>> Stashed changes
 const FooterAreas = ({imageExist, iconExist, icon, image, imageAlt, link, title}) => {
     if(imageExist){
         return(
@@ -29,6 +32,9 @@ const FooterAreas = ({imageExist, iconExist, icon, image, imageAlt, link, title}
             <li><a href={link} target='_blank' rel='noreferrer'>{icon}</a></li>
         )
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 
