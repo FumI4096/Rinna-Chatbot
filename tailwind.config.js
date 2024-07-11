@@ -15,6 +15,7 @@ module.exports = {
       },
       fontSize: {
         'base': '1rem',
+        'custom-size-1': '1.6rem',
       },
       backgroundColor: {
         'gray1': 'rgb(166,166,166)',
@@ -22,14 +23,16 @@ module.exports = {
         'gray-custom-1': '#181818'
       },
       fontFamily: {
-        'anton': ["Anton SC", "sans-serif"]
+        'anton': ["Anton SC", "sans-serif"],
+        'oxygen': ["oxygen", "sans-serif"],
+        'pm': ["Permanent Marker", "cursive"],
+        'fjalla': ["Fjalla One", "sans-serif"],
+        'baskerville': ["Baskervville SC", "serif"]
       },
       letterSpacing: {
         'custom-spacing-1': '0.25rem'
       },
-
-
-    },
+    }
   },
   plugins: [],
 }
