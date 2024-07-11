@@ -5,22 +5,21 @@ const Article = ({title, comment, image, showButton, buttonLink, buttonText}) =>
     return (
         <>
             <article className={`h-96 flex px-24 py-16 gap-32  
-                    ${
-                        (title !== "Artificial Intelligence (AI)" && title !== "Get a Chitchat with Princy") ? 'flex-row-reverse bg-violet-custom-1 decoration-violet-400' : 'flex-row bg-gray-custom-1'
-                    }
-                `}>
+                ${
+                    (title !== "Artificial Intelligence (AI)" && title !== "Get a Chitchat with Princy") ? 'flex-row-reverse bg-violet-custom-1 decoration-violet-400' : 'flex-row bg-gray-custom-1'
+                }
+            `}>
                 <img src={image} alt="" className='h-full rounded-full drop-shadow-xl'/>
                 <aside className={`
                     ${
                         (showButton) ? 'flex flex-col' : ''
                     }
-                    `}>
+                `}>
                     <h1 className={`text-3xl mb-10 text-white font-mono underline underline-offset-4 font-bold
                         ${
                             (title !== "Artificial Intelligence (AI)" && title !== "Get a Chitchat with Princy") ? 'decoration-violet-600' : 'decoration-violet-400'
 
-                        } 
-
+                        }
                     `}>{title}</h1>
                     <p className={`text-white leading-8
                         ${

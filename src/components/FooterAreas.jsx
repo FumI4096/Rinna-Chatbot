@@ -7,7 +7,7 @@ const FooterAreas = ({imageExist, iconExist, icon, image, imageAlt, link, title}
             <>
                 <li className='h-12 flex items-center gap-4'>
                     <img src={image} alt={imageAlt} className='h-full rounded-full'/>
-                    <a href={link} target='_blank' rel='noreferrer'>{title}</a>
+                    <a href={link} target='_blank' rel='noreferrer' className='font-mono text-lg font-bold underline-offset-2 underline'>{title}</a>
                     
                 </li>
             </>
@@ -15,7 +15,10 @@ const FooterAreas = ({imageExist, iconExist, icon, image, imageAlt, link, title}
     }
     else if(iconExist){
         return(
-            <li><a href={link} target='_blank' rel='noreferrer'>{icon}</a></li>
+            <li className='h-auto w-auto flex flex-row items-center gap-3'>
+                <div className='h-auto w-auto p-3 rounded-full bg-violet-800 flex justify-center items-center text-white'>{icon}</div>
+                <a href={link} target='_blank' rel='noreferrer' className='font-mono text-base font-bold text-lg underline-offset-2 underline'>{title}</a>
+            </li>
         )
     }
 
