@@ -2,11 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Article = ({title, comment, image, showButton, buttonLink, buttonText}) => {
+    const getContentBackground = (string) => {
+        if(string === "Artificial Intelligence (AI)" || string === "Get a Chitchat with Princy" || string === "Application Programming Interface (API)"){
+            return `odd:bg-gray-custom-1 even:bg-black`
+        }
+        else if (string === "Colegio de San Juan de Letran Calamba" || "Credits to Rinna Developers" || string === "School of Computer Studies and Technology"){
+            return `odd:bg-gray-custom-2 even:bg-gray-custom-1`
+        }
+    }
+
     return (
         <>
-            <article className={`h-96 flex px-24 py-16 gap-32  
-                ${
-                    (title !== "Artificial Intelligence (AI)" && title !== "Get a Chitchat with Princy") ? 'flex-row-reverse bg-violet-custom-1 decoration-violet-400' : 'flex-row bg-gray-custom-1'
+            <article className={`h-96 flex px-24 py-16 gap-32 even:flex-row-reverse ${
+                    getContentBackground(title)
                 }
             `}>
                 <img src={image} alt="" className='h-full rounded-full drop-shadow-xl'/>
