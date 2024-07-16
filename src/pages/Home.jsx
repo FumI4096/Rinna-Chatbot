@@ -13,6 +13,7 @@ function Home() {
             <Hero 
                 buttonOne="Get Started"
                 buttonTwo="Give us your Comment"
+                buttonExist={true}
             
             />
 
@@ -29,7 +30,6 @@ function Home() {
                         comment="APIs (Application Programming Interfaces) are essential for integrating AI into applications easily. They connect AI services with developers, offering standard methods to use AI without needing deep AI knowledge. Major tech companies like Google, Microsoft, and IBM provide AI APIs with pre-trained models for tasks like natural language processing, image recognition, and predictive analytics. These APIs enable developers to add advanced features such as voice recognition, sentiment analysis, and recommendation engines to their apps. They also support ongoing development by updating AI models, ensuring apps remain current with AI advancements. This approach democratizes AI, allowing developers to innovate quickly, improve user experiences, and explore new opportunities across various industries."
                         image={API}
                     />
-
                     <Article
                         title="Get a Chitchat with Princy" 
                         comment="Curious about AI, need assistance, or just want to chat? Feel free to start a conversation with Princy—I'm here to help!"
