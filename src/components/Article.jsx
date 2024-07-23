@@ -13,32 +13,15 @@ const Article = ({title, comment, image, showButton, buttonLink, buttonText}) =>
 
     return (
         <>
-            <article className={`h-96 flex px-24 py-16 gap-32 even:flex-row-reverse ${
-                    getContentBackground(title)
-                }
-            `}>
-                <img src={image} alt="" className='h-full rounded-full drop-shadow-xl'/>
-                <aside className={`
-                    ${
-                        (showButton) ? 'flex flex-col' : ''
-                    }
-                `}>
-                    <h1 className={`text-3xl mb-10 text-white font-mono underline underline-offset-4 font-bold
-                        ${
-                            (title !== "Artificial Intelligence (AI)" && title !== "Get a Chitchat with Princy") ? 'decoration-violet-600' : 'decoration-violet-400'
-
-                        }
-                    `}>{title}</h1>
-                    <p className={`text-white leading-8
-                        ${
-                            (showButton) ? 'mb-auto' : ''
-                        }
-                    `}>{comment}</p>
+            <article className={`h-auto flex px-24 py-16 gap-32 even:flex-row-reverse max-lg:flex-col max-lg:even:flex-col max-lg:gap-12 max-md:px-16 ${getContentBackground(title)}`}>
+                <img src={image} alt="" className='h-80 rounded-full drop-shadow-xl self-center max-xl:h-72 max-md:h-64'/>
+                <aside className={`${(showButton) ? 'flex flex-col' : ''}`}>
+                    <h1 className='text-3xl mb-10 text-white font-mono underline underline-offset-4 font-bold odd:decoration-violet-400 even:decoration-violet-600 max-lg:text-center'>{title}</h1>
+                    <p className={`text-white leading-8 max-lg:text-center ${(showButton) ? 'mb-auto max-lg:mb-20 max-md:mb-10' : ''}`}>{comment}</p>
                     {showButton && (
-                        <div>
+                        <div className='max-lg:self-center'>
                             <a href={buttonLink} className=' text-white bg-violet-600 px-8 py-3 rounded-lg font-semibold'>{buttonText}</a>
                         </div>
-
                     )}
                 </aside>
             </article>
