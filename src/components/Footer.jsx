@@ -63,7 +63,7 @@ function Footer() {
 
         </section>
 
-        <p className='absolute bottom-0 left-0 pl-24 bg-violet-800 w-full py-1 font-mono'>&#169; 2024 Princy Bot. All rights reserved.</p>
+        <p className='absolute bottom-0 left-0 pl-24 bg-violet-800 w-full py-1 font-mono max-lg:text-sm max-lg:text-center max-lg:p-0'>&#169; 2024 Princy Bot. All rights reserved.</p>
 
 
 

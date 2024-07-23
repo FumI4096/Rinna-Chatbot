@@ -12,6 +12,10 @@ module.exports = {
       height: {
         '1xl': '30rem',
         '2xl': '35rem',
+        '3xl': '40rem',
+        '4xl': '45rem',
+        '5xl': '50rem',
+        '6xl': '55rem'
       },
       fontSize: {
         'base': '1rem',
@@ -30,7 +34,10 @@ module.exports = {
         'baskerville': ["Baskervville SC", "serif"]
       },
       letterSpacing: {
-        'custom-spacing-1': '0.25rem'
+        'custom-spacing-1': '0.25rem',
+      },
+      lineHeight: {
+        'custom-spacing-1': '7rem'
       },
       colors: {
         'gray-custom-2': 'rgb(60, 60, 60)',
