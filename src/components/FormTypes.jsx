@@ -13,11 +13,11 @@ const FormTypes = ({label, id}) => {
         (label === 'Give us your suggestion') ? 
         <>
           <label htmlFor={id} className='text-violet-500 font-bold'>{label}</label>
-          <textarea name={id} id={id} className='h-32 resize-none outline-none bg-gray-custom-4 p-2 text-white '/>
+          <textarea name={id} id={id} className='h-32 resize-none outline-none bg-gray-custom-4 p-2 text-white max-xl:h-48'/>
         </>
         : 
         <>
-          <label htmlFor={id} className='text-violet-500 font-bold'>{label}</label>
+          <label htmlFor={id} className='text-violet-500 font-bold max-xl:text-base'>{label}</label>
           <input type="text" id={id} placeholder={placeHolderText(label)} className='h-7 bg-transparent border-b-2 border-violet-500 w-full outline-none text-white placeholder:text-gray-custom-4'/>
         </>
       } 
