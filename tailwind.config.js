@@ -42,7 +42,8 @@ module.exports = {
       colors: {
         'gray-custom-2': 'rgb(60, 60, 60)',
         'gray-custom-3': 'rgb(70, 70, 70)',
-        'gray-custom-4': 'rgb(100, 100, 100)'
+        'gray-custom-4': 'rgb(100, 100, 100)',
+        'gray-custom-5': 'rgb(140, 140, 140)'
       },
     }
   },
