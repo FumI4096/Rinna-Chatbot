@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { MdClose } from "react-icons/md";
 
 const Nav = () => {
-    const [viewNav, setViewNav] = useState(true)
+    const [viewNav, setViewNav] = useState(window.innerWidth <= 1280)
 
     useEffect(() => {
         const handleResize = () => {
@@ -14,6 +14,8 @@ const Nav = () => {
         };
 
         window.addEventListener('resize', handleResize);
+
+        handleResize();
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
